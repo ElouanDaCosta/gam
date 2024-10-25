@@ -1,5 +1,5 @@
-# Golang-application-cli
-A CLI in golang to interact with a single or multiple applications in Golang.
+# Golang Application Manager
+A CLI in Golang to interact and manage a single or multiple applications in Golang.
 
 ## Prerequisites
 
