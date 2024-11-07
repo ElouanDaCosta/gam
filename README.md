@@ -51,7 +51,7 @@ You can build the CLI using the following command.
 Then you can run the CLI using the binary file.
 
 ```bash
-go build -o ./bin/go-app-cli
+go build -o ./bin/gam
 ```
 
 If you want to use the CLI from anywhere, you can add the binary to the PATH. To do this, run the following command.
@@ -70,13 +70,13 @@ go install
 Create a new application using the following command.
 
 ```bash
-./bin/go-app-cli init --name <YOUR_APP_NAME>
+./bin/gam init --name <YOUR_APP_NAME>
 ```
 
 You can create a dockerfile for the application using the following command.
 
 ```bash
-./bin/go-app-cli init --name <YOUR_APP_NAME> --dockerfile
+./bin/gam init --name <YOUR_APP_NAME> --dockerfile
 ```
 
 The dockerfile will be created in the root of the application and the Golang version will be the same as the application.
@@ -86,13 +86,13 @@ The dockerfile will be created in the root of the application and the Golang ver
 List all the applications using the following command.
 
 ```bash
-./bin/go-app-cli list
+./bin/gam list
 ```
 
 List a specific application using the following command.
 
 ```bash
-./bin/go-app-cli list --name <YOUR_APP_NAME>
+./bin/gam list --name <YOUR_APP_NAME>
 ```
 
 ### Remove applications
@@ -100,13 +100,13 @@ List a specific application using the following command.
 Delete a specific application from the storage using the following command.
 
 ```bash
-./bin/go-app-cli prune --name <YOUR_APP_NAME>
+./bin/gam prune --name <YOUR_APP_NAME>
 ```
 
 Delete completely the applications using the following command.
 
 ```bash
-./bin/go-app-cli prune --remove-app --name <YOUR_APP_NAME>
+./bin/gam prune --remove-app --name <YOUR_APP_NAME>
 ```
 
 ### Update applications
@@ -114,13 +114,13 @@ Delete completely the applications using the following command.
 Update the go version of a specific application using the following command.
 
 ```bash
-./bin/go-app-cli update --name <YOUR_APP_NAME> --version <YOUR_GO_VERSION>
+./bin/gam update --name <YOUR_APP_NAME> --version <YOUR_GO_VERSION>
 ```
 
 Update the go version of all the applications using the following command.
 
 ```bash
-./bin/go-app-cli update --all --version <YOUR_GO_VERSION>
+./bin/gam update --all --version <YOUR_GO_VERSION>
 ```
 
 ## Project Structure

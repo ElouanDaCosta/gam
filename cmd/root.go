@@ -6,7 +6,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/ElouanDaCosta/Golang-application-cli/utils"
+	"github.com/ElouanDaCosta/gam/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -15,7 +15,7 @@ var installedPath = utils.GetInstalledPath()
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Version: "1.2.0",
-	Use:     "go-app-cli",
+	Use:     "gam",
 	Short:   "Generate a basic template of an application in Golang",
 	Long:    `Generate template for applications in Golang with the package that you want, like gin, gRPC etc.`,
 	// Uncomment the following line if your bare application

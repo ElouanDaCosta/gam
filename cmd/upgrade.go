@@ -19,11 +19,11 @@ var upgradeCmd = &cobra.Command{
 	Short: "Upgrade the go version of the specified application.",
 	Long: `Upgrade a single application go version or a specified package version or update all applications go version or package. For example:
 
-go-app-cli upgrade --name [your_app_name] --version [version_wanted]
+gam upgrade --name [your_app_name] --version [version_wanted]
 
-go-app-cli upgrade --version [version_wanted] --all
+gam upgrade --version [version_wanted] --all
 
-go-app-cli upgrade --version [version_wanted] -a
+gam upgrade --version [version_wanted] -a
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		name, _ := cmd.Flags().GetString("name")

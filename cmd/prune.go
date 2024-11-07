@@ -22,9 +22,9 @@ var removeCmd = &cobra.Command{
 clear completely the storage where all the application is saved 
 or remove an application with the remove-app flag. For example:
 
-go-app-cli prune --name new_app
-go-app-cli prune --all
-go-app-cli prune --app --name new_app
+gam prune --name new_app
+gam prune --all
+gam prune --app --name new_app
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		appName, _ := cmd.Flags().GetString("name")

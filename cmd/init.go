@@ -10,8 +10,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/ElouanDaCosta/Golang-application-cli/templates"
-	"github.com/ElouanDaCosta/Golang-application-cli/utils"
+	"github.com/ElouanDaCosta/gam/templates"
+	"github.com/ElouanDaCosta/gam/utils"
 
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
@@ -39,8 +39,8 @@ var generateCmd = &cobra.Command{
 	Short: "Initialize a golang application.",
 	Long: `Initialize a golang application using the specified technology between gin, gRPC or just basic http. For example:
 
-go-app-cli init 
-go-app-cli init --name [your_app_name]
+gam init 
+gam init --name [your_app_name]
 	`,
 	Run: func(cmd *cobra.Command, args []string) {
 		appName, _ := cmd.Flags().GetString("name")

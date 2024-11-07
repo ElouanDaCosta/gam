@@ -10,7 +10,7 @@ echo export PATH="$PATH:$(go env GOPATH)/bin"
 
 echo export GAC=$(pwd) >> ~/.zshrc
 
-go build -o bin/go-app-cli
+go build -o bin/gam
 
 go install
 

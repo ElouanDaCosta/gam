@@ -1,4 +1,4 @@
-module github.com/ElouanDaCosta/Golang-application-cli
+module github.com/ElouanDaCosta/gam
 
 go 1.22.5
 
